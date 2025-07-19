@@ -4,7 +4,8 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-conn = pymysql.connect(host='localhost', user='root', password='yourpassword', db='notesdb')
+conn = pymysql.connect(host='localhost', user='flaskuser', password='flaskpass', db='notesdb')
+
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
